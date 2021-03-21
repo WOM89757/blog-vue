@@ -1,9 +1,9 @@
 <template>
   <div class="right slider">
     <img class="right-logo"
-         src="../assets/userLogo.jpeg"
+         src="../assets/1.jpg"
          alt="">
-    <div class="title">夜尽天明</div>
+    <div class="title">Wom</div>
     <div class="right-content">
       <!-- <div class="item">
         <div class="num">123</div>粉丝
@@ -35,14 +35,23 @@
              alt="全栈修炼" />
       </div>
     </div>
-    <div class="introduce">
+    <!-- <div class="introduce">
       <div class="title">技术以外的 BB</div>
       <div class="content">
         <img style="width:100%;"
              src="../assets/YingHeZaHuoPu.png"
              alt="硬核杂货铺" />
       </div>
+    </div> -->
+    <div class="introduce">
+      <div class="title">站内音乐</div>
+      <div class="content">
+        <img style="width:100%;"
+             src="../assets/YingHeZaHuoPu.png"
+             alt="硬核杂货铺" />
+      </div>
     </div>
+
   </div>
 </template>
 

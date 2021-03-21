@@ -6,27 +6,35 @@
         <router-link class="link"
                      to="/home">
           <img class="home-logo"
-               src="../assets/userLogo.jpeg"
-               alt="biaochenxuying logo" />
+               src="../assets/1.jpg"
+               alt="logo" />
         </router-link>
       </div>
       <div class="home-body">
         <div class="list">
-          <router-link class="link"
+          <!-- <router-link class="link"
                        to="/articles">
             文章
           </router-link>
           <router-link class="link"
                        to="/project">
             项目
+          </router-link> -->
+          <router-link class="link"
+                       to="/">
+            文章
+          </router-link>
+          <router-link class="link"
+                       to="/">
+            项目
           </router-link>
           <a target="_blank"
              rel="noopener noreferrer"
              class="link"
-             href="https://github.com/biaochenxuying">
-            github
+             href="https://github.com/WOM89757">
+            Github
           </a>
-          <a target="_blank"
+          <!-- <a target="_blank"
              rel="noopener noreferrer"
              class="link"
              href="https://juejin.im/user/591d6b4d0ce463006926ae40">
@@ -49,7 +57,7 @@
              class="link"
              href="https://www.jianshu.com/u/91717b553bfd">
             简书
-          </a>
+          </a> -->
         </div>
         <div class="introduce"> 时光正好，未来可期，加油 ！ </div>
       </div>
@@ -65,14 +73,14 @@ declare var document: Document | any;
 @Component({})
 export default class Home extends Vue {
   mounted() {
-    if (document.location.protocol === "http:") {
-      this.$message({
-        message:
-          "本网站已经配置了 https，为了有更好的体验效果，请把地址前缀换成 https 哦",
-        type: "warning",
-        duration: 3000
-      });
-    }
+    // if (document.location.protocol === "http:") {
+    //   this.$message({
+    //     message:
+    //       "本网站已经配置了 https，为了有更好的体验效果，请把地址前缀换成 https 哦",
+    //     type: "warning",
+    //     duration: 3000
+    //   });
+    // }
     let sakura_point_vsh: string = `
     uniform mat4 uProjection;
     uniform mat4 uModelview;

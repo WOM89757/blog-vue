@@ -7,6 +7,7 @@
       <Slider v-if="isShowSlider"></Slider>
     </div>
     <ArrowUp></ArrowUp>
+    <Music></Music>
     <Footer v-show="isShowNav"></Footer>
   </div>
 </template>
@@ -19,6 +20,7 @@ import Slider from "@/components/slider.vue"; // @ is an alias to /src
 import Footer from "@/components/footer.vue"; // @ is an alias to /src
 import ArrowUp from "@/components/arrowUp.vue"; // @ is an alias to /src
 import { isMobileOrPc } from "@/utils/utils";
+import Music from "@/components/music.vue";
 
 // 移动端 rem 单位适配
 if (isMobileOrPc()) {
@@ -34,7 +36,8 @@ if (isMobileOrPc()) {
     Nav,
     Slider,
     ArrowUp,
-    Footer
+    Footer,
+    Music
   }
 })
 export default class App extends Vue {

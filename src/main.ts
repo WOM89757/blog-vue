@@ -5,6 +5,8 @@ import router from "./router";
 import store from "./store/index";
 import service from "./utils/https";
 import urls from "./utils/urls";
+import '@/assets/iconfont/iconfont.css'
+
 import {
   Dialog,
   Form,
@@ -23,10 +25,15 @@ import {
   Timeline,
   TimelineItem,
   Card,
-  Tag
+  Tag,
+  Avatar,
+  Slider,
+  scrollbar
 } from "element-ui";
 import CollapseTransition from "element-ui/lib/transitions/collapse-transition";
 import mixin from "./mixins";
+
+
 
 Vue.mixin(mixin);
 
@@ -49,9 +56,17 @@ Vue.component(Timeline.name, Timeline);
 Vue.component(TimelineItem.name, TimelineItem);
 Vue.component(Card.name, Card);
 Vue.component(Tag.name, Tag);
+Vue.component(Avatar.name, Avatar);
+Vue.component(Slider.name, Slider);
+Vue.component(scrollbar.name, scrollbar);
+
 Vue.use(Loading.directive);
 Vue.prototype.$message = Message;
 Vue.prototype.$loading = Loading.service;
+
+import axios from 'axios';
+Vue.prototype.$axios = axios;
+
 
 Vue.config.productionTip = false;
 Vue.prototype.$https = service; // 其他页面在使用 axios 的时候直接  this.$http 就可以了
